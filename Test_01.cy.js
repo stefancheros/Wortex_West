@@ -1,6 +1,7 @@
 describe('Test 1', () => {
   it('Social links', () => {
    cy.visit('https://jira.trungk18.com/project/board/index.html')
+   cy.wait(2000)
 
    // Support
    cy.get('span').contains('Support').parent().parent().parent()

@@ -1,6 +1,7 @@
 describe('Test 4', () => {
   it('Open issue and change status, add assignee and change priority', () => {
     cy.visit('https://jira.trungk18.com/project/board/index.html')
+    cy.wait(2000)
 
     cy.get('#Backlog > :nth-child(1) > .issue-wrap > .issue').click()
     cy.get('issue-status > .ant-dropdown-trigger > .btn > span').click()

@@ -1,6 +1,7 @@
 describe('Test 5', () => {
   it('Makes a comment in an issue', () => {
      cy.visit('https://jira.trungk18.com/project/board/index.html')
+     cy.wait(2000)
 
         cy.get('#Backlog > :nth-child(1) > .issue-wrap > .issue').click()
         cy.get('.editing-area > .cdk-textarea-autosize').type('This is automation test done by Stefan');

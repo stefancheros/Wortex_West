@@ -1,6 +1,7 @@
 describe('Test 6', () => {
   it('Filter implementation', () => {
     cy.visit('https://jira.trungk18.com/project/board/index.html')
+    cy.wait(2000)
     //Count issues
     cy.get(':nth-child(4) > .status-list > .px-3').should('contain','7')
 

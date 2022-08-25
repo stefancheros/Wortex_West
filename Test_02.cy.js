@@ -1,9 +1,11 @@
 describe('Test 2', () => {
   it('Settings', () => {
    cy.visit('https://jira.trungk18.com/project/settings')
+   cy.wait(2000)
 
    // Name is not empty
-   cy.get(':nth-child(1) > .form-input').should('have.value','Angular Jira Clone');
+   cy.get(':nth-child(1) > .form-input').should('not.have.value', '');
+   //cy.get(':nth-child(1) > .form-input').should('have.value','Angular Jira Clone');
 
    // URL is correct
    cy.get(':nth-child(2) > .form-input').should('have.value', 'https://github.com/trungk18/jira-clone-angular');

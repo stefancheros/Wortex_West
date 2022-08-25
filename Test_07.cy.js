@@ -1,6 +1,7 @@
 describe('Test 7', () => {
   it('Creating New issue', () => {
     cy.visit('https://jira.trungk18.com/project/board/index.html')
+    cy.wait(2000)
 
     cy.get(':nth-child(1) > .status-list > .px-3').should('contain','3')
 
