@@ -1,5 +1,8 @@
-describe('empty spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
+describe('Test 9', () => {
+  it('Tooltip', () => {
+    cy.visit('https://jira.trungk18.com/project/board/index.html')
+    cy.get('.navbarLeft-content > :nth-child(5)').trigger('mouseover')
+    //cy.get('.popover').should('be.visible')
+
   })
 })
